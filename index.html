@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Landing Page</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500&family=Montserrat:wght@500;700&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" type="image/png" href="download.jpg">
+    <link rel="stylesheet" href="./style.css"/>
+    <link
+    href="https://cdn.jsdelivr.net/npm/remixicon@4.0.0/fonts/remixicon.css"
+    rel="stylesheet"
+    />
+</head>
+<body>
+    <header id="header">
+        <nav id="nav-bar">
+            <div class="logo-container">
+                <img 
+                    src="data:image/png;base64,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" 
+                    alt="logo"
+                    id="header-img"
+                />
+                <span class="the-product">Classic Books</span>
+                </div>
+                <ul class="nav-links">
+                    <li><a href="#features"class="nav-link">Features</a></li>
+                    <li><a href="#audio"class="nav-link">Free audio book</a></li>
+                    <li><a href="#for_sale"class="nav-link">For Sale</a></li>
+                </ul>
+            
+        </nav>
+    </header>
+    <section id="email-section">
+        <h2>Beautifully Written Masterpieces</h2>
+        <form action="https://www.youtube.com/email-submit" id="form">
+            <input 
+                id="email"
+                type="email"
+                required 
+                placeholder="Enter your email address"
+                name="email"
+                />
+                <input type="submit" id="submit"value="GET STARTED">
+        </form>
+    </section>
+    <section id="features">
+        <div class="feature">
+            <i class="ri-file-paper-fill ri-4x icon"></i>
+            </div>
+            <h2>Premium Materials</h2>
+            <p>
+                Our Books use the best paper which is sourced to 
+                increase the longevity of your purchase.
+            </p>
+        </div>
+    </div>
+    <div class="feature">
+        <i class="ri-truck-fill ri-4x icon"></i>
+        <div>
+            <h2>1 Day Shipping</h2>
+            <p>
+                We make sure you receive your classic book as so 
+                that you can start reading immediately. We also if you are not satisfied
+            </p>
+        </div>
+    </div>
+    <div class="feature">
+        <i class="ri-book-open-line ri-4x icon"></i>
+        <div>
+            <h2>Quality Books Only</h2>
+            <p>
+                We make sure to only provide awesome classic boo 
+                that the book you buy is one of the top classic
+            </p>
+        </div>
+    </div>
+</section>
+<section id="audio">
+    <iframe
+        id="video" 
+        width="400" 
+        height="315" 
+        src="https://www.youtube.com/embed/YKAfKprBXQc?si=03dXXlnSmkBVWKLU" 
+        title="YouTube video player" 
+        frameborder="0" 
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+        allowfullscreen
+    ></iframe>
+</section>
+
+<section id="for_sale">
+    <h2>For sale</h2>
+    <div id="product-cards">
+        </div class="card">
+        <div class="product-image product1"></div>
+            <div class="inner-card">
+                <div class="author">Dale Carnegie</div>
+                
+                <h1 class="header">
+                    How to Win Friends & Influence
+                    people  
+                
+                <p class="content">
+                    Dale Carnegie's rock-solid, time-tested advice has carried
+                    countless people up the ladder of success in their business and 
+                    person lives.
+                </p>
+                
+                <div class="flex">
+                    <p class="main-price">$16.12</p>
+                    <p class="old-price">$19.29</p>
+                </div>
+                
+                <button class="add">
+                    <p style="margin-left: 5px">Add to Cart</p>
+                </button>
+            </div>
+        </div>
+        <div class="card">
+            <div class="product-image product2"></div>
+            <div class="inner-card">
+                <div class="author">Robert t. Kiyosai</div>
+                
+                <h1 class="header">Rich Dad Poor Dad</h1>
+                
+                <p class="content">
+                    What the rich teach their kids that the poor
+                    and the middle-class do not. 
+                </p>
+                
+                <div class="flex">
+                    <p class="main-price">$7.68</p>
+                    <p class="old-price">$15.16</p>
+                </div>
+                
+                <button class="add">
+                    <p style="margin-left: 5px">Add to Cart</p>
+                </button>
+            </div>
+        </div>
+        <!-- BOOK THREE -->
+        <div class="card">
+            <div class="product-image product3"></div>
+            <div class="inner-card">
+                <div class="author">James Clear</div>
+                
+                <h1 class="header">Atomic Habits</h1>
+                
+                <p class="content">
+                    A supremely practical and useful book. James Clear distills the 
+                    most fundamental information about habit formation, so you can 
+                    accomplish more by focusing on less.
+                </p>
+                
+                <div class="flex">
+                    <p class="main-price">$11.98</p>
+                    <p class="old-price">$14.99</p>
+                </div>
+                
+                <button class="add">
+                    <p style="margin-left: 5px">Add to Cart</p>
+                </button>
+            </div>
+        </div>
+    </div>    
+</section>
+</body>
+</html>
